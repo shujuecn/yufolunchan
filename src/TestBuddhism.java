@@ -3,7 +3,7 @@ import buddhism.BuddhismTools;
 public class TestBuddhism {
     public static void main(String[] args) {
         // 明文
-        String content = "123";
+        String content = "偶数";
 
         // 加密
         String encryptedContent = BuddhismTools.human2Buddhism(content, "shujuecn");
