@@ -2,11 +2,15 @@ import buddhism.BuddhismTools;
 
 public class TestBuddhism {
     public static void main(String[] args) {
-        String content = "Hello world!";
-        String encryptedContent = BuddhismTools.human2Buddhism(content, "MYCUSTOMKEY");
+        // 明文
+        String content = "123";
+
+        // 加密
+        String encryptedContent = BuddhismTools.human2Buddhism(content, "shujuecn");
         System.out.println(encryptedContent);
 
-        String decryptedContent = BuddhismTools.buddhism2Human(encryptedContent, "MYCUSTOMKEY");
+        // 解密
+        String decryptedContent = BuddhismTools.buddhism2Human(encryptedContent, "shujuecn");
         System.out.println(decryptedContent);
     }
 }
